@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>GallyTube</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$('.fadein img:gt(0)').hide();
+		setInterval(function(){
+		$('.fadein :first-child').fadeOut(1000)
+		   .next('img').fadeIn(1000)
+		   .end().appendTo('.fadein');}, 3500);
+	});
+	</script>
+	<style>
+	.fadein{
+		position:relative;
+		width:200px;
+		height:350px;
+	
+	}
+	.fadein img {
+		padding-left: 120%;
+		position:absolute;
+		width:500px;
+		height:281px;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<hgroup>
+			<h1>GallyTube</h1>
+			<blockquote>Discover -> Connect -> Influence</blockquote>
+		</hgroup>
+	</header>
+	<nav id="top">
+    	<ul>
+    		<li><a class="current" href="index.html">Home</a></li>
+    		<li><a href="history.html">GallyCampus</a></li>
+    		<li><a href="specs.html">Faculty/Staff</a></li>
+    		<li><a href="inmovie.html">Organizations</a></li>
+    		<li><a href="insport.html">Vlog</a></li>
+    		<li><a href="media.html">Globalization</a></li>
+    		<li><a href="subscribe.html">Registration</a></li>
+    	</ul>
+    </nav>
+	<section>
+   		<div>
+			<h1>Gallaudet University</h1>
+			<p>
+				PLACEHOLD
+			</p>
+			<p>
+				PLACEHOLD:MISSION STATEMENT
+			</p>
+			<p>
+				PLACEHOLD
+			</p>
+		</div>
+		<div class="slideshow">
+			<div class="fadein">
+            	<img src="images/slideshow_1.jpg" alt="slideshow_1">
+            	<img src="images/slideshow_2.jpg" alt="slideshow_2">
+            	<img src="images/slideshow_3.jpg" alt="slideshow_3">
+            	<img src="images/slideshow_4.jpg" alt="slideshow_4">
+            	<img src="images/slideshow_5.JPG" alt="slideshow_5">
+            	<img src="images/slideshow_6.jpg" alt="slideshow_6">
+            	<img src="images/slideshow_7.jpg" alt="slideshow_7">
+            	<img src="images/slideshow_8.jpg" alt="slideshow_8">
+            	<img src="images/slideshow_9.jpg" alt="slideshow_9">
+            	<img src="images/slideshow_10.jpg" alt="slideshow_10">
+   			</div>
+   		</div>
+   		
+	</section>
+
+	<footer>
+		<p>&copy; <script type="text/javascript" >
+            var today = new Date();
+            document.write( today.getFullYear() );
+        </script>, Aharon J. Riolo</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>History of Nissan Skyline</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		label {
+    		float: left;
+   			width: 100px;
+   	 		text-align: right;
+		}
+
+		select{
+			margin-left: 1em;
+			width: 200px;
+		}
+
+		input {
+    		margin-left: 1em;
+    		margin-bottom: .5em;
+    		width: 200px;
+		}
+
+		textarea{
+			margin-left: 1em;
+			margin-bottom: .5em;
+			width: 300px;
+			height: 100px;
+		}
+
+		fieldset{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			border: 2px solid black;
+			width: 50%;
+		}
+
+		.button{
+			margin-right: auto;
+		}
+	
+		form{
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<hgroup>
+			<h1>History of Nissan Skyline</h1>
+			<blockquote>Probably the <span style="font-style: italic; font-weight: bold;">fastest</span> street legal car on the road today</blockquote>
+		</hgroup>
+	</header>
+	<nav id="top">
+    	<ul>
+    		<li><a href="index.html">Home</a></li>
+    		<li><a href="history.html">History</a></li>
+    		<li><a href="specs.html">Specifications</a></li>
+    		<li><a href="inmovie.html">Involve in Movie</a></li>
+    		<li><a href="insport.html">Involve in Sport</a></li>
+    		<li><a href="media.html">Multimedia</a></li>
+    		<li><a class="current" href="subscribe.html">Subscribe</a></li>
+    	</ul>
+    </nav>
+	<section>
+		<fieldset>
+		<form  name="myform"  action="php/subscribe.php"  method="post"   target="_blank" >  
+			<label for="email">E-Mail:</label>
+			<input type="email"  name="email" placeholder="example@example.com" title="Must be email format" autofocus required><br>
+			
+			<label for="first_name">First Name:</label>
+     		<input type="text" name="first_name" required><br>
+     		
+     		<label for="last_name">Last Name:</label>
+     		<input type="text" name="last_name" required><br>
+     		
+     		<label for="carBrand">Car Brand: </label>
+     		<select name="carBrand" required>
+     			<option></option>
+    			<option value="acura">Acura</option>
+    			<option value="alfa_romeo">Alfa Romeo</option>
+   		 		<option value="aston_martin">Aston Martin</option>
+    			<option value="audi">Audi</option>
+    			<option value="bentley">Bentley</option>
+    			<option value="bmw">BMW</option>
+    			<option value="bugatti">Bugatti</option>
+    			<option value="buick">Buick</option>
+    			<option value="cadillac">Cadillac</option>
+    			<option value="chevrolet">Chevrolet</option>
+    			<option value="chrysler">Chrysler</option>
+    			<option value="dodge">Dodge</option>
+    			<option value="ferrari">Ferrari</option>
+    			<option value="fiat">Fiat</option>
+    			<option value="ford">Ford</option>
+    			<option value="gmc">GMC</option>
+    			<option value="honda">Honda</option>
+    			<option value="hummer">Hummer</option>
+    			<option value="hyundai">Hyundai</option>
+    			<option value="infiniti">Infiniti</option>
+    			<option value="jaguar">Jaguar</option>
+    			<option value="jeep">Jeep</option>
+    			<option value="kia">Kia</option>
+    			<option value="lamborghini">Lamborghini</option>
+    			<option value="land_rover">Land Rover</option>
+    			<option value="lexus">Lexus</option>
+    			<option value="lincoln">Lincoln</option>
+    			<option value="lotus">Lotus</option>
+    			<option value="maserati">Maserati</option>
+    			<option value="mazda">Mazda</option>
+    			<option value="mclaren">McLaren</option>
+    			<option value="mercedes-benz">Mercedes-Benz</option>
+    			<option value="mercury">Mercury</option>
+    			<option value="mitsubishi">Mitsubishi</option>
+    			<option value="nissan">Nissan</option>
+    			<option value="oldsmobile">Oldsmobile</option>
+    			<option value="peugeot">Peugeot</option>
+    			<option value="pontiac">Pontiac</option>
+    			<option value="porsche">Porsche</option>
+    			<option value="renault">Renault</option>
+    			<option value="rolls_royce">Rolls Royce</option>
+    			<option value="saab">Saab</option>
+    			<option value="saturn">Saturn</option>
+    			<option value="smart">Smart</option>
+    			<option value="subaru">Subaru</option>
+    			<option value="suzuki">suzuki</option>
+    			<option value="tesla_motors">Tesla Motors</option>
+    			<option value="toyota">Toyota</option>
+    			<option value="volkswagen">Volkswagen</option>
+    			<option value="volvo">Volvo</option>
+    			<option value="not_listed">Not Listed</option>
+			</select><br><br>	
+			
+			<label for="not_listed">Not listed?: </label>
+			<input type="text" placeholder="Type your car's brand name here" name="not_listed"><br><br>	
+			
+			<label for="comments">Comments: </label>
+			<textarea name="comments" placeholder="If you have any comments, please enter them here.">
+     		</textarea>	<br>
+     		
+     		<input type="submit" class="button" name="submit" value="Submit">
+   		 	<input type="reset" class="button" name ="reset" value="Reset"><br> 
+   		 </form>
+   		 </fieldset>
+   		 
+
+		
+        
+	</section>
+
+	<footer>
+		<p>&copy; <script type="text/javascript" >
+            var today = new Date();
+            document.write( today.getFullYear() );
+        </script>, Aharon J. Riolo</p>
+	</footer>
+</body>
+</html>
